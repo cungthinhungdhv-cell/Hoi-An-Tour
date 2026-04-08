@@ -1926,7 +1926,7 @@
             let finalPrice = costTotal + profitTotal;
 
             if (isAgentMode) {
-                const markupVnd = (agentMarkupPerPerson * totalPeople + agentMarkupTotal) * vndPerUsd;
+                const markupVnd = ((agentMarkupPerPerson + agentFood) * totalPeople + agentMarkupTotal) * vndPerUsd;
                 finalPrice += Math.round(markupVnd);
             }
 
